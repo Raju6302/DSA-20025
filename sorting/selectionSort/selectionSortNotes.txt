@@ -1,0 +1,32 @@
+-------------Selection Sort---------------
+
+
+Selection Sort is a simple and efficient sorting algorithm that works by repeatedly finding the minimum element from the unsorted portion and swapping it with the first element of that portion.
+
+How It Works
+ 1. Divide the array into two parts: sorted and unsorted.
+ 2. Find the smallest element in the unsorted part.
+ 3. Swap it with the first element of the unsorted part.
+ 4. Move the boundary of the sorted part one step forward.
+ 5. Repeat until the entire array is sorted.
+
+
+-----Pseudocode for Selection Sort------
+
+ for i from 0 to n-1:
+    minIndex = i
+    for j from i+1 to n:
+        if arr[j] < arr[minIndex]:
+            minIndex = j
+    swap(arr[i], arr[minIndex])
+
+
+Time Complexity
+  Best Case (Already Sorted)	O(n²)
+  Worst Case (Reverse Sorted)	O(n²)
+  Average Case	O(n²)
+
+Space Complexity
+  Space Complexity: O(1) → No extra space is used apart from the input array.
+  
+Not Stable: Selection sort is not a stable sort, meaning it does not preserve the relative order of equal elements.
