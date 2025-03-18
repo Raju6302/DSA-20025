@@ -1,0 +1,19 @@
+-------------Insertion Sort---------------
+
+
+Insertion Sort is a simple and efficient sorting algorithm that works similarly to sorting playing cards in your hands. It builds the sorted array one item at a time by inserting each element into its correct position.
+
+steps:
+ 1. Assume the first element is already sorted.
+ 2. Pick the next element and compare it with the sorted part (left side).
+ 3. Shift the elements larger than the picked element to the right to make space.
+ 4. Insert the picked element at its correct position.
+ 5. Repeat this process for all elements.
+
+
+Time & Space Complexity:
+  Best Case (Already Sorted): 𝑂(𝑛)
+  Worst & Average Case: 𝑂(𝑛^2)
+
+Space Complexity: 
+  O(1) (in-place sorting, no extra memory used)
