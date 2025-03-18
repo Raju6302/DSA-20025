@@ -1,0 +1,37 @@
+-------------Bubble Sort---------------
+
+Bubble Sort is a simple sorting algorithm used to arrange elements in ascending or descending order by repeatedly swapping adjacent elements if they are in the wrong order.
+
+How Bubble Sort Works?
+  1. Compare each element with its adjacent element (right-side element).
+  2. If the current element is greater than the adjacent element, swap them.
+  3. Continue this process for the entire array, ensuring that the largest element moves to the rightmost position.
+  4. Repeat the process for the remaining unsorted part of the array.
+  5. The process continues until all elements are sorted.
+
+
+-----Pseudocode for Bubble Sort------
+
+BubbleSort(arr, n):
+    for i from 0 to n-1:   // Outer loop (passes)
+        swapped = false     // Optimization: To check if swapping happened
+        for j from 0 to n-i-1:   // Inner loop (comparison & swapping)
+            if arr[j] > arr[j+1]:   // Swap if the current element is greater
+                swap(arr[j], arr[j+1])
+                swapped = true
+        if swapped == false:   // If no swap occurred, the array is already sorted
+            break
+
+
+
+Time & Space Complexity
+
+  Time Complexity:
+
+    Best Case (Already Sorted Array): O(n) → When no swaps occur (Optimized Bubble Sort)
+    Worst & Average Case: O(n²) → Due to the nested loops, every element is compared with others.
+    Space Complexity: O(1)
+
+No extra space is used apart from a few temporary variables.
+  Optimized Bubble Sort
+    Instead of running all passes, we can track whether a swap occurred. If no swaps happen in a pass, it means the array is already sorted, and we can exit early. This makes Bubble Sort more efficient in the best-case scenario.
