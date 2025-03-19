@@ -21,8 +21,6 @@ public class MergeSort {
   }
 
 
-
-  //combine two sorted arrays into one sorted array
   public static int[] sortedArray(int[] arr1, int[] arr2) {
     int[] combinedArray = new int[arr1.length + arr2.length];
     int index = 0, i = 0, j = 0;
