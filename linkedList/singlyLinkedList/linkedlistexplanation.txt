@@ -1,0 +1,94 @@
+-------------Singly Linked List---------------
+
+
+A Singly Linked List is a linear data structure where each node contains a value and a reference (or pointer) to the next node in the sequence. Unlike an array, a linked list does not require contiguous memory allocation and allows dynamic memory allocation.
+
+
+1. Node Class
+
+  Each node in the linked list consists of:
+
+  int value → Stores the data.
+
+  Node next → Stores the reference to the next node.
+
+2. LinkedList Class
+
+  The LinkedList class maintains:
+
+  head → Points to the first node.
+
+  tail → Points to the last node.
+
+  length → Keeps track of the total number of nodes.
+
+
+Constructor
+
+  Initializes the linked list with a single node.
+
+
+Operations
+
+  1. Append (Insert at End)
+
+   Adds a node at the end of the list.
+
+  2. Prepend (Insert at Beginning)
+
+   Adds a node at the start of the list.
+
+  3. Remove First Node
+
+    Deletes the first node from the list.
+
+  4. Remove Last Node
+
+    Deletes the last node from the list.
+
+  5. Get Node at Index
+
+  R etrieves a node at a given index.
+
+  6. Set Value at Index
+
+    Updates the value at a given index.
+
+  7. Insert at Index
+
+    Inserts a node at a given position.
+
+  8. Remove at Index
+
+    Removes a node at a specific index.
+
+  9. Reverse the Linked List
+
+    Reverses the order of the linked list.
+
+  10. Print Linked List
+
+    Prints all elements of the linked list.
+
+
+Complexity Analysis
+
+Operation          Time Complexity
+
+Append                 O(1)
+
+Prepend                O(1)
+
+Remove First           O(1)
+
+Remove Last            O(n)
+
+Get (by index)         O(n)
+
+Set (by index)         O(n)
+
+Insert (at index)      O(n)
+
+Remove (at index)      O(n)
+
+Reverse                O(n)
