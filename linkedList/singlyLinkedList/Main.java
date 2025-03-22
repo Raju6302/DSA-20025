@@ -9,7 +9,6 @@ public class Main {
     myLinkedList.append(4);
     myLinkedList.append(5);
     myLinkedList.append(6);
-    myLinkedList.prepend(1);
     myLinkedList.prepend(100);
 
     System.out.println("removed first element: " + " " + myLinkedList.removeFirst().value);
