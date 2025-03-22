@@ -63,6 +63,7 @@ public class DoublyLinkedList {
       tail = newNode;
     } else {
       newNode.next = head;
+      head.prev = newNode;
       head = newNode;
     }
 
