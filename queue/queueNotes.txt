@@ -1,0 +1,53 @@
+Queue (Using Linked List)
+   A queue is a linear data structure that follows the First In, First Out (FIFO) principle. This means that the first element added to the  queue is the first one to be removed.
+
+How Queue Works?
+
+  Enqueue Operation – Adds an element to the end (rear) of the queue.
+
+  Dequeue Operation – Removes the front element from the queue.
+
+
+
+Implementation Details:
+
+  1.A Node class is used to represent each element in the queue.
+
+  2.The queue is implemented using a linked list, where:
+
+    -> first points to the front of the queue.
+
+    -> last points to the rear (end) of the queue.
+    
+  3.The length variable keeps track of the number of elements in the queue
+
+
+-------- Pseudocode for Queue Operations -------------
+
+  Enqueue (Insert Element at End)
+
+    ENQUEUE(value):
+      Create a new Node with given value
+      If queue is empty:
+          Set first = new Node
+          Set last = new Node
+      Else:
+          Set last.next = new Node
+          Update last to new Node
+      Increment length
+
+
+  Dequeue (Remove Element from Front)
+
+    DEQUEUE():
+      If queue is empty:
+          Return NULL
+      Store first node in temp
+      If first == last:
+          Set first = NULL
+          Set last = NULL
+      Else:
+          Update first to first.next
+          Disconnect temp node (temp.next = NULL)
+      Decrement length
+      Return temp (dequeued node)
