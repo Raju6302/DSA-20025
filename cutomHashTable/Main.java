@@ -1,8 +1,8 @@
-package hashTable;
+package cutomHashTable;
 
 public class Main {
   public static void main(String[] args) {
-    HashTable myHashTable = new HashTable();
+    CustomHashTable myHashTable = new CustomHashTable();
     
     myHashTable.set("raj", 100);
     myHashTable.set("bheem", 200);

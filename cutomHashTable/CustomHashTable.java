@@ -1,8 +1,8 @@
-package hashTable;
+package cutomHashTable;
 
 import java.util.ArrayList;
 
-public class HashTable {
+public class CustomHashTable {
   private int size = 7;
   private Node[] datamap;
 
@@ -17,7 +17,7 @@ public class HashTable {
     }
   }
 
-  public HashTable() {
+  public CustomHashTable() {
     datamap = new Node[size];
   }
 
