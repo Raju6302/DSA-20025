@@ -13,8 +13,8 @@ Properties of BST
 
 
 Insertion in BST
- 1. How Insertion Works?
-  If the tree is empty, the new node becomes the root.
+  How Insertion Works?
+ 1. If the tree is empty, the new node becomes the root.
 
  2. Start at the root and compare the new value with the current node’s value.
 
