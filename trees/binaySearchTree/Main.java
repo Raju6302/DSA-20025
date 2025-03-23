@@ -12,6 +12,8 @@ public class Main {
 
     myBST.insert(27);
 
+    System.out.println(myBST.update(27, 99));
+
     System.out.println(myBST.root.value);
     System.out.println(myBST.root.left.value);
     System.out.println(myBST.root.right.value);

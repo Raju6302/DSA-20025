@@ -53,5 +53,17 @@ public class BinarySearchTree {
     return false;
   }
 
+  public boolean update(int oldValue, int newValue) {
+    Node temp = root;
+    while ( temp != null) {
+      if (temp.value == oldValue) {
+        temp.value = newValue;
+        return true;
+      }
+      temp = oldValue < temp.value ? temp.left : temp.right;
+    }
+    return false;
+  }
+
 
 }
