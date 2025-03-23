@@ -1,0 +1,104 @@
+---------------Binary Search Tree (BST)--------------
+
+A Binary Search Tree (BST) is a hierarchical data structure where each node has at most two children. The left subtree contains values smaller than the node, while the right subtree contains values greater than the node.
+
+Properties of BST
+ 1. The left subtree contains only nodes with values less than the node’s value.
+
+ 2. The right subtree contains only nodes with values greater than the node’s value.
+
+ 3. No duplicate values are allowed.
+
+ 4. The left and right subtrees must also be binary search trees.
+
+
+Insertion in BST
+ 1. How Insertion Works?
+  If the tree is empty, the new node becomes the root.
+
+ 2. Start at the root and compare the new value with the current node’s value.
+
+ 3. If the new value is smaller, move to the left subtree.
+
+ 4. If the new value is greater, move to the right subtree.
+
+ 5. Repeat this process until an empty position is found, and insert the new node.
+
+Pseudocode for Insertion:
+
+  InsertNode(root, value):
+      Create a new node with given value
+      If root is NULL:
+          root = new node
+          Return true
+
+      temp = root
+      While true:
+          If value == temp.value:
+              Return false  // No duplicates allowed
+
+          If value < temp.value:
+              If temp.left is NULL:
+                  temp.left = new node
+                  Return true
+              Move temp to temp.left
+          Else:
+              If temp.right is NULL:
+                  temp.right = new node
+                  Return true
+              Move temp to temp.right
+
+Time Complexity:
+
+  Best & Average Case: O(log n) (if the tree is balanced)
+
+  Worst Case: O(n) (if the tree is skewed)
+
+  Space Complexity: O(1)
+
+
+Searching in BST (Lookup Operation)
+  How Lookup Works?
+
+   1. Start at the root and compare the target value with the current node’s value.
+
+   2. If the target value is equal to the current node’s value, return true (value found).
+
+   3. If the target value is smaller, move to the left subtree.
+
+   4. If the target value is greater, move to the right subtree.
+
+   5. If the search reaches a NULL node, return false (value not found).
+
+
+Pseudocode for Lookup
+
+
+  Lookup(root, value):
+      temp = root
+      While temp is NOT NULL:
+          If temp.value == value:
+              Return true
+          If value < temp.value:
+              Move temp to temp.left
+          Else:
+              Move temp to temp.right
+      Return false
+
+Time Complexity:
+
+  Best & Average Case: O(log n)
+
+  Worst Case: O(n) (if the tree is unbalanced)
+
+  Space Complexity: O(1)
+
+
+Advantages of BST
+  ✔ Efficient searching, insertion, and deletion operations.
+  ✔ Used in databases, sorting algorithms, and memory storage applications.
+  ✔ Maintains an ordered structure of data.
+
+Disadvantages of BST
+  ✖ If the tree is unbalanced, operations can degrade to O(n) (like a linked list).
+  ✖ Requires additional logic to maintain balance (e.g., AVL Tree, Red-Black Tree).
