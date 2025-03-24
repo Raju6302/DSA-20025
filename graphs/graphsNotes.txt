@@ -1,0 +1,145 @@
+------------ Graph --------------
+
+1. What is a Graph?
+
+    A graph is a data structure that consists of:
+
+    Vertices (Nodes): Represent entities.
+
+    Edges (Connections): Represent relationships between entities.
+
+    Graphs can be directed (one-way connections) or undirected (two-way connections) and weighted (edges have values) or unweighted.
+
+2. Adjacency Matrix
+
+    An adjacency matrix is a 2D array where rows and columns represent vertices, and the cell value indicates the presence of an edge.
+
+    Example Representation:-
+     For a graph with vertices A, B, C:
+
+            A B C
+        A [0 1 1]
+        B [1 0 1]
+        C [1 1 0]
+
+      Here, 1 represents an edge, and 0 means no edge.
+
+Time and Space Complexity
+
+  Space Complexity: O(V^2) (even for sparse graphs, memory usage is high)
+
+  Edge Insertion: O(1) (direct access using indices)
+
+  Edge Lookup: O(1)
+
+  Edge Removal: O(1)
+
+  Iterating Over Neighbors: O(V)
+
+
+3. Adjacency List
+
+  An adjacency list is a more space-efficient way to store a graph. It uses a map (or array of lists) where each vertex stores a list of connected vertices.
+
+  Example Representation
+
+  For the same graph:
+    A -> [B, C]
+    B -> [A, C]
+    C -> [A, B]
+
+Time and Space Complexity
+
+  Space Complexity: O(V + E) (efficient for sparse graphs)
+
+  Edge Insertion: O(1)
+
+  Edge Lookup: O(V) (in worst case, for an unstructured list)
+
+  Edge Removal: O(V) (finding and removing an element in the list)
+
+  Iterating Over Neighbors: O(E)
+
+
+4. Why Use Adjacency List Over Matrix?
+
+  Efficient Memory Usage: Uses O(V + E) space instead of O(V^2).
+
+  Faster Iteration: Iterating over neighbors takes O(E), while adjacency matrix takes O(V).
+
+  More Suitable for Sparse Graphs: When edges are much fewer than V^2, an adjacency matrix wastes space.
+
+
+5. Real-Life Applications of Graphs
+
+  1. Social Networks (Facebook, Instagram, LinkedIn)
+
+    ->  Users (vertices) and connections (edges).
+
+    ->  Finding mutual friends, shortest path between users, influencer detection.
+
+  2. Maps & Navigation (Google Maps, GPS)
+
+    ->  Locations (vertices) and roads (edges).
+
+    ->  Finding shortest routes (Dijkstra’s algorithm), detecting traffic congestion.
+
+  3. Web Crawling (Search Engines)
+
+    ->  Websites (vertices) and links (edges).
+
+    ->  PageRank algorithm to rank websites.
+
+  4. Recommendation Systems (Amazon, Netflix, Spotify)
+
+    -> Users and products as vertices, interactions as edges.
+
+    -> Collaborative filtering for personalized recommendations
+
+  5. Computer Networks (Internet Routing, Peer-to-Peer Networks)
+
+    -> Routers/Computers as nodes, network links as edges.
+
+    -> Finding optimal paths for data transfer.
+
+
+------------- Pseudocode for Basic Graph Operations (Adjacency List) -------------
+
+Adding a Vertex : 
+
+   function addVertex(graph, vertex):
+    if vertex not in graph:
+        graph[vertex] = []
+
+
+Adding an Edge :
+
+   function addEdge(graph, vertex1, vertex2):
+    if vertex1 in graph and vertex2 in graph:
+        graph[vertex1].append(vertex2)
+        graph[vertex2].append(vertex1)
+
+
+Removing an Edge : 
+
+   function removeEdge(graph, vertex1, vertex2):
+    if vertex1 in graph and vertex2 in graph:
+        graph[vertex1].remove(vertex2)
+        graph[vertex2].remove(vertex1)
+
+Removing a vertex : 
+
+   function removeVertex(graph, vertex):
+    if vertex in graph:
+        for neighbor in graph[vertex]:
+            graph[neighbor].remove(vertex)
+        del graph[vertex]
+
+
+Conclusion:
+
+    Adjacency Matrix is better for dense graphs (E ≈ V^2), fast lookups, and constant-time edge checking.
+
+    Adjacency List is better for sparse graphs, efficient storage, and quick iteration over neighbors.
+
+    Real-world applications include social networks, pathfinding in maps, recommendation systems, and web crawling
