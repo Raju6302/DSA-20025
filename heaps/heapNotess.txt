@@ -1,0 +1,114 @@
+----------- Heap --------------
+
+1. What is a Heap?
+
+    A heap is a special binary tree-based data structure that satisfies the heap property:
+
+    Max Heap: The value of each parent node is greater than or equal to the values of its children.
+
+    Min Heap: The value of each parent node is less than or equal to the values of its children.
+
+    Heaps are commonly used to implement priority queues.
+
+2. Heap Representation
+
+    A heap is generally represented using an array.
+
+    For an element at index i:
+
+        Left Child: 2*i + 1
+
+        Right Child: 2*i + 2
+
+        Parent: (i - 1) / 2
+
+3. Operations on Heap
+
+     -> Insertion in a Max Heap
+
+     -> Insert the element at the end of the heap.
+
+     -> Compare it with its parent.
+
+     -> Swap with the parent if it's greater (bubble up).
+
+     -> Repeat the process until the heap property is restored
+
+------------- Pseudocode  ---------
+
+    function insert(heap, value):
+        append value to heap
+        index = size of heap - 1
+        while index > 0 and heap[index] > heap[parent(index)]:
+            swap(heap, index, parent(index))
+            index = parent(index)
+
+Deletion (Remove Max in Max Heap)
+
+    -> Swap the root (maximum element) with the last element.
+
+    -> Remove the last element.
+
+    -> Compare the new root with its largest child.
+
+    -> Swap if necessary (sink down) and repeat until the heap property is restored.
+
+--------- Pseudocode --------
+
+    function remove(heap):
+        if heap is empty:
+            return null
+        if heap is equals 1:
+           return heap.remove(0)
+
+        maxValue = heap[0]
+        heap[0] = heap.pop()
+        sinkDown(heap, 0)
+        return maxValue
+
+
+----- Time and Space Complexity --------
+
+    Operation   Time Complexity
+    Insert          O(log N)
+    Remove          O(log N)
+    Get Max           O(1)
+
+
+Real-Life Applications of Heaps
+
+    1. Priority Queues
+
+        Task scheduling in OS (CPU scheduling, Disk scheduling).
+
+        Managing tasks in job scheduling algorithms.
+
+    2. Graph Algorithms
+
+        Dijkstra’s Algorithm for shortest path.
+
+        Prim’s Algorithm for Minimum Spanning Tree.
+
+    3. Heap Sort
+
+        Sorting technique based on heap property.
+
+        Time Complexity: O(N log N)
+
+    4. Memory Management
+
+        Used in Garbage Collection (Java, Python, etc.).
+
+        Efficient memory allocation in dynamic programming.
+
+    5. Autocomplete & Search Suggestions
+
+        Search engines store top results in a heap.
+
+Conclusion
+
+    Heap is a fundamental binary tree used for priority queue management.
+
+    It provides efficient insertions and deletions in O(log N) time.
+
+    Used in real-world applications like task scheduling, pathfinding, sorting, and search engines.
