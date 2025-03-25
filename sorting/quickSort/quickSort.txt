@@ -1,0 +1,47 @@
+------------- Quick Sort --------------
+
+Quick Sort is a divide and conquer sorting algorithm that works by selecting a pivot element and partitioning the array around it.
+
+Steps:
+  1. Pick a pivot (commonly the first, last, or a random element).
+  2. Partition the array:
+   -> Move elements smaller than the pivot to the left.
+   -> Move elements larger than the pivot to the right.
+  3. Recursively apply Quick Sort to the left and right subarrays.
+  4. The base case is when the subarray has one or zero elements (already sorted).
+
+
+------ Pseudocode ---------
+
+      quickSort(arr):
+        Call quickSortHelper(arr, left = 0, right = arr.length - 1)
+
+
+    quickSortHelper(arr, left, right):
+        If left < right:
+            pivotIndex = partition(arr, left, right)  // Get pivot's final position
+            quickSortHelper(arr, left, pivotIndex)     // Sort left side
+            quickSortHelper(arr, pivotIndex + 1, right) // Sort right side
+
+
+    partition(arr, pivotIndex, endIndex):
+        Set swapIndex = pivotIndex  // Tracks where to place the pivot
+        For each element from pivotIndex+1 to endIndex:
+            If element < pivot:
+                Increment swapIndex
+                Swap element with arr[swapIndex]
+
+        Swap pivot with arr[swapIndex] (placing it in the correct position)
+        Return swapIndex  // New pivot position
+
+
+    swap(arr, leftIndex, rightIndex):
+        temp = arr[leftIndex]
+        arr[leftIndex] = arr[rightIndex]
+        arr[rightIndex] = temp
+
+
+Time & Space Complexity:
+  Best & Average Case: O(n log n)
+  Worst Case (Already Sorted Array with bad pivot choice): O(n²)
+  Space Complexity: O(log n) (recursive stack calls)

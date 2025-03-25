@@ -1,0 +1,86 @@
+------------- Doubly Linked List ---------------
+
+A Doubly Linked List (DLL) is a linear data structure where each node contains a value and two references (or pointers):
+
+ next → Points to the next node in the sequence.
+
+ prev → Points to the previous node.
+
+-> Unlike a Singly Linked List, a Doubly Linked List allows both forward and backward traversal, making it more flexible.
+
+
+1. Node Class
+
+  Each node in the linked list consists of:
+
+    int value → Stores the data.
+
+    Node next → Stores the reference to the next node.
+
+    Node prev → Stores the reference to the previous node.
+
+
+2. DoublyLinkedList Class
+
+  The DoublyLinkedList class maintains:
+
+    head → Points to the first node.
+
+    tail → Points to the last node.
+
+    length → Keeps track of the total number of nodes.
+
+Operations
+---------------
+
+ 1.Append (Insert at End)
+
+    Adds a node at the end of the list.
+
+ 2.Prepend (Insert at Beginning)
+
+    Adds a node at the start of the list.
+
+ 3.Remove First Node
+
+    Deletes the first node from the list.
+
+ 4.Remove Last Node
+
+    Deletes the last node from the list.
+
+ 5.Get Node at Index
+
+    Retrieves a node at a given index.
+
+ 6.Set Value at Index
+
+    Updates the value at a given index.
+
+  7.Insert at Index
+
+    Inserts a node at a given position.
+
+  8.Remove at Index
+
+    Removes a node at a specific index.
+
+
+Operation          Time Complexity
+
+Append                 O(1)
+
+Prepend                O(1)
+
+Remove First           O(1)
+
+Remove Last            O(1)
+
+Get (by index)         O(n)
+
+Set (by index)         O(n)
+
+Insert (at index)      O(n)
+
+Remove (at index)      O(n)
+

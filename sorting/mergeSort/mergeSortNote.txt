@@ -1,0 +1,49 @@
+------------- Merge Sort ---------------
+
+Merge Sort is a divide and conquer algorithm that recursively splits an array into two halves, sorts them separately, and then merges them back into a single sorted array.
+
+Steps:
+ 1. Divide: Split the array into two halves until each half has only one element.
+ 2. Conquer: Recursively sort both halves.
+ 3. Merge: Combine the two sorted halves back into a single sorted array.
+
+Implementation Details:
+ 1. Uses recursion to break down the array.
+ 2. Uses two-pointer approach while merging two sorted subarrays.
+ 3. Arrays.copyOfRange(arr, start, end) is used to split the array efficiently.
+
+
+----- Pseudocode ------
+
+  MERGE_SORT(arr):
+    If arr has only one element, return arr
+    
+    mid = length(arr) / 2
+    leftHalf = MERGE_SORT(arr[0:mid])
+    rightHalf = MERGE_SORT(arr[mid:end])
+
+    return MERGE(leftHalf, rightHalf)
+
+  MERGE(left, right):
+    Initialize an empty result array
+    int i, j = 0 (pointers for left and right arrays)
+
+    While i < length(left) AND j < length(right):
+      If left[i] < right[j], append left[i] to result and increment i
+      Else, append right[j] to result and increment j
+
+    Append remaining elements from left (if any)
+    Append remaining elements from right (if any)
+
+    Return result array
+ 
+
+
+Time & Space Complexity:
+Best, Worst, and Average Case: O(n log n) (due to recursive splitting and merging).
+Space Complexity: O(n) (extra space needed for merging).
+
+Key Points:
+ 1. Stable Sort (preserves the relative order of duplicate elements).
+ 2. Preferred for large datasets due to its O(n log n) time complexity.
+ 3. Not in-place, as it requires additional memory for merging.
