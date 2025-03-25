@@ -32,9 +32,8 @@ public class LinkedList {
     } else {
       tail.next = newNode;
       tail = newNode;
-      length++;
     }
-
+    length++;
   }
 
   public void prepend(int value) {
@@ -42,12 +41,11 @@ public class LinkedList {
     if (head == null) {
       head = newNode;
       tail = newNode;
-      length++;
     } else {
       newNode.next = head;
       head = newNode;
-      length++;
     }
+    length++;
   }
 
   public Node removeFirst() {

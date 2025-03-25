@@ -29,28 +29,29 @@ public class DoublyLinkedList {
     if (head == null) {
       head = newNode;
       tail = newNode;
-      length++;
     } else {
       tail.next = newNode;
+      newNode.prev = tail;
       tail = newNode;
-      length++;
     }
+    length++;
   }
 
   public Node removeLast() {
     if (head == null)
       return null;
 
+    Node temp = tail;
+
     if (head == tail) {
       head = null;
       tail = null;
+    } else {
+      tail = tail.prev;
+      tail.next = null;
+      temp.prev = null;
     }
 
-    Node temp = tail;
-
-    tail = tail.prev;
-    tail.next = null;
-    temp.prev = null;
     length--;
     return temp;
   }
@@ -62,6 +63,7 @@ public class DoublyLinkedList {
       tail = newNode;
     } else {
       newNode.next = head;
+      head.prev = newNode;
       head = newNode;
     }
 
@@ -136,23 +138,20 @@ public class DoublyLinkedList {
     if (index < 0 || index >= length) return null;
     if (index == 0) return removeFirst();
     if (index == length -1) return removeLast();
-    
+
     Node before = get(index -1);
     Node temp = before.next;
     Node after = temp.next;
-    
-    before.next = after;
-    if (after != null) {
-    after.prev = before;
-    }
 
+    before.next = after;
+    after.prev = before;
     temp.next = null;
     temp.prev = null;
     length--;
 
     return temp;
 
-  } 
+  }
 
   public void getHead() {
     System.out.println("head -> " + " " + head.value);
