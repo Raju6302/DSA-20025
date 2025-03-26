@@ -1,0 +1,28 @@
+------------- Recursion ---------------
+ 
+  Recursion is a technique where a function calls itself to solve smaller subproblems of the main problem.
+  It continues until a base condition is met to prevent infinite loops.
+ 
+How Recursion Works?
+  1. A function calls itself with a smaller input.
+  2. There is a base condition that stops further recursive calls.
+  3. The function gradually returns results as recursion unwinds.
+ 
+ ----- Pseudocode for Recursion ------
+ 
+  RecursiveFunction(params):
+      if (base condition met):
+          return result
+      else:
+          return RecursiveFunction(modified params)
+ 
+  
+---------- Time & Space Complexity ----------------
+  - Time Complexity: Varies depending on the problem (e.g., factorial is O(n), Fibonacci is O(2^n))
+  - Space Complexity: O(n) due to recursive call stack (can be optimized with tail recursion or memoization)
+ 
+ 
+---------- Real-world Example ------------
+  - Imagine a Gift Box. Each box contains a smaller one inside until we reach the gift-inside (base case).
+  - Similarly, recursion breaks a problem into smaller subproblems until a stopping condition is met.
+
