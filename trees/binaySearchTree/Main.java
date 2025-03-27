@@ -24,5 +24,7 @@ public class Main {
 
 
     System.out.println(myBST.lookup(82));
+
+   System.out.println(myBST.rContains(21));
   }
 }
