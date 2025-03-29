@@ -6,42 +6,48 @@ Welcome to the DSA Fundamentals Implementations repository! 🚀 This project is
 
 We welcome contributions in various programming languages! Currently, the repository includes implementations in:
 
-  Java
+ ->  Java
   
-  Python
+ -> Python
   
-  JavaScript
+ -> JavaScript
 
 🌍 You can contribute by implementing DSA problems using any other programming language, such as:
 
-  C++
+-> C++
   
-  Go Lang
+-> Go Lang
   
-  Rust
+-> Rust
   
-  TypeScript
+-> TypeScript
   
-  Swift
+-> Swift
   
-  Kotlin
+-> Kotlin
   
-  Ruby
+-> Ruby
 
 Any other language of your choice!
 
 🚀 How to Contribute
 
+```
 Fork the Repository: Click the fork button to create a copy of the repo in your account.
 
 Clone the Repo: Clone your forked repository to your local machine.
+```
 
+```
 git clone https://github.com/Raju6302/DSA-20025.git
 cd DSA-20025
+```
 
 Create a Branch: Create a new branch for your contribution.
 
-git checkout -b feature-your-language
+```
+git checkout -b feature-your-languag
+```
 
 Add Your Code: Implement the algorithm or data structure in your chosen language inside an appropriate folder (/C++/, /GoLang/, etc.).
 
@@ -51,9 +57,9 @@ Commit and Push:
 git add .
 git commit -m "Added Binary Search in Python"
 git push origin feature-your-language
-```
 
 Create a Pull Request (PR): Open a pull request describing your changes.
+```
 
 🌟 Contribution Guidelines
 
