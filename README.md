@@ -12,7 +12,7 @@ We welcome contributions in various programming languages! Currently, the reposi
   
   JavaScript
 
-You can contribute by implementing DSA problems using any other programming language, such as:
+🌍 You can contribute by implementing DSA problems using any other programming language, such as:
 
   C++
   
@@ -37,6 +37,7 @@ Fork the Repository: Click the fork button to create a copy of the repo in your 
 Clone the Repo: Clone your forked repository to your local machine.
 
 git clone https://github.com/Raju6302/DSA-20025.git
+cd DSA-20025
 
 Create a Branch: Create a new branch for your contribution.
 
@@ -46,9 +47,11 @@ Add Your Code: Implement the algorithm or data structure in your chosen language
 
 Commit and Push:
 
+```
 git add .
-git commit -m "Added message in [Language]"
+git commit -m "Added Binary Search in Python"
 git push origin feature-your-language
+```
 
 Create a Pull Request (PR): Open a pull request describing your changes.
 
