@@ -6,27 +6,27 @@ Welcome to the DSA Fundamentals Implementations repository! 🚀 This project is
 
 We welcome contributions in various programming languages! Currently, the repository includes implementations in:
 
-Java
-
-Python
-
-JavaScript
+  Java
+  
+  Python
+  
+  JavaScript
 
 You can contribute by implementing DSA problems using any other programming language, such as:
 
-C++
-
-Go Lang
-
-Rust
-
-TypeScript
-
-Swift
-
-Kotlin
-
-Ruby
+  C++
+  
+  Go Lang
+  
+  Rust
+  
+  TypeScript
+  
+  Swift
+  
+  Kotlin
+  
+  Ruby
 
 Any other language of your choice!
 
@@ -63,4 +63,6 @@ Add a README file inside your language folder (optional but appreciated).
 Ensure your code runs correctly before submitting.
 
 Avoid duplicate implementations; if an algorithm already exists in a language, try improving it instead.
+
+Happy Coding! 🚀
 
