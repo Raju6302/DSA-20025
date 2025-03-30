@@ -32,11 +32,9 @@ Any other language of your choice!
 
 🚀 How to Contribute
 
-```
 Fork the Repository: Click the fork button to create a copy of the repo in your account.
 
 Clone the Repo: Clone your forked repository to your local machine.
-```
 
 ```
 git clone https://github.com/Raju6302/DSA-20025.git
