@@ -44,7 +44,7 @@ public class PreOrder {
     }
   }
 
-  // PreOrder go left as long as possible until currentNode.left is not equal to null and do the same for right as well
+  // PreOrder go left as long as possible until currentNode.left is not equal to null and do the same for right as well.
 
   public ArrayList<Integer> preOrder() {
     ArrayList<Integer> results = new ArrayList<>();
