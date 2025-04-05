@@ -54,11 +54,11 @@ bubbleSort(arr):
                 swapped = true
         if not swapped:
             break
-
+```
 
 🎞️ Visualization
 
-
+![Bubble Sort Visualization](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
 🕒 Complexity Analysis
 Case    	      Time Complexity	                             Space Complexity
