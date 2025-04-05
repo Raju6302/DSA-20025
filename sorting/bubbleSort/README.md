@@ -8,7 +8,7 @@
   - [⚙️ How It Works](#️-how-it-works)
   - [🔁 Pseudocode](#-pseudocode)
   - [💻 Java Implementation](#-java-implementation)
-  - [🎞️ Visualization](#-visualization)
+  - [🎞️ Visualization](#Visualization)
   - [🕒 Complexity Analysis](#-complexity-analysis)
   - [⚖️ Tradeoffs Analysis](#️-tradeoffs-analysis)
     - [✅ Advantages](#-advantages)
@@ -56,12 +56,12 @@ bubbleSort(arr):
             break
 ```
 
-🎞️ Visualization
+🎞## Visualization
 
 ![Bubble Sort Visualization](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
 
-### 🕒 Complexity
+## 🕒 Complexity
 
 | Case        | Time Complexity | Space Complexity |
 |-----------------|-----------------|------------------|
@@ -87,11 +87,14 @@ bubbleSort(arr):
     Redundant comparisons in worst cases
 
 🧠 Key Implementation Notes
-Optimized Version
-  Use a `swapped` flag to break early if no swaps occurred (already sorted).
 
-Stable Sort
-Bubble Sort is stable: it does not change the relative order of equal elements.
+  Optimized Version
+  
+    Use a `swapped` flag to break early if no swaps occurred (already sorted).
+  
+  Stable Sort
+  
+    Bubble Sort is stable: it does not change the relative order of equal elements.
 
 ## 👥 Contributors Welcome!  
 ![Open in GitHub](https://img.shields.io/badge/Contribute-GitHub-brightgreen?logo=github)
