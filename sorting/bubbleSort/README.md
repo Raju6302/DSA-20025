@@ -73,6 +73,7 @@ bubbleSort(arr):
 ⚖️ Tradeoffs Analysis
 
   ✅ Advantages
+   
     Simple to implement
 
     Stable: Maintains the relative order of equal elements
@@ -80,6 +81,7 @@ bubbleSort(arr):
     Good for small or nearly sorted data
 
   ❌ Disadvantages
+   
     Inefficient for large datasets due to O(n²) time
 
     Redundant comparisons in worst cases
@@ -90,4 +92,10 @@ Optimized Version
 
 Stable Sort
 Bubble Sort is stable: it does not change the relative order of equal elements.
+
+## 👥 Contributors Welcome!  
+![Open in GitHub](https://img.shields.io/badge/Contribute-GitHub-brightgreen?logo=github)
+
+---
+*Happy coding and happy learning! This repository is designed to be a go-to resource for understanding DSA fundamentals, and we welcome contributions and improvements from the community.*
 
