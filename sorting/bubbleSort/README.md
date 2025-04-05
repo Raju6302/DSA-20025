@@ -60,11 +60,15 @@ bubbleSort(arr):
 
 ![Bubble Sort Visualization](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
-🕒 Complexity Analysis
-Case    	      Time Complexity	                             Space Complexity
-Best	            O(n) (when array is already sorted)	           O(1)
-Average         	O(n²)                                          O(1)
-Worst	            O(n²)	                                         O(1)
+
+### 🕒 Complexity
+
+| Case        | Time Complexity | Space Complexity |
+|-----------------|-----------------|------------------|
+| **Best** | O(n) (when array is already sorted)        | O(1)             |
+| **Average**   | O(n²)            | O(1)             |
+| **Worst**   | O(n²)            | O(1)             |
+
 
 ⚖️ Tradeoffs Analysis
 
