@@ -149,14 +149,11 @@ console.log("Length: " + dll.getLength())
 dll.traverseList()
 dll.reverseTraverseList()
 const rmF = dll.removeFirst()
-console.log("Length: " + dll.getLength() + " Remove value=" +rmF.value)
 const rmL = dll.removeLast()
 dll.traverseList()
-console.log("Length: " + dll.getLength() + " Remove value=" +rmL.value)
 const temp = dll.getIndex(1)
 console.log(temp.value)
 const rmI = dll.removeIndex(1);
-console.log("Length: " + dll.getLength() + " Remove value=" +rmI.value)
 dll.traverseList()
 
 
