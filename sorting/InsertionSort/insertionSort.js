@@ -4,13 +4,12 @@ class insertSort{
     }
     sort(){
         for(let i=1;i<this.arr.length;i++){
-            let j=i;
-            while(j>=0 && this.arr[j-1]>this.arr[j]){
-                const temp = this.arr[j-1]
-                this.arr[j-1] = this.arr[j]
-                this.arr[j] = temp
-                j--;
+            let key = this.arr[i]
+            let j;
+            for(j=i-1;j>=0 && this.arr[j]>key;j--){
+                this.arr[j+1] = this.arr[j]
             }
+            this.arr[j+1] = key;
         }
         return this.arr
     }
