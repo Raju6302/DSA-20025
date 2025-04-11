@@ -6,7 +6,7 @@ class Node{
     }
 }
 
-class bFS{
+export default class bFS{
     constructor(){
         this.root = null
     }
@@ -23,10 +23,10 @@ class bFS{
         };
         this.root = insertRecursive(this.root,value)
     }
-    bfs(){
+    bfs(root){
         let result = []
         let queue = []
-        queue.push(this.root)
+        queue.push(root)
         while(queue.length>0){
             let currentNode = queue.shift()
             result.push(currentNode.value)
@@ -52,4 +52,4 @@ _bfs.insert(82);
 
 console.log(_bfs.root)
 
-console.log(_bfs.bfs())
+console.log(_bfs.bfs(_bfs.root))
